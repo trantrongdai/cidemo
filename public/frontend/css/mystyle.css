@@ -1,0 +1,30 @@
+/***********************************
+ * Tác giả: 2Cwebvn
+ * Website : www.2cweb.vn
+ ***********************************/
+
+
+/* CSS cho textbox nhập nội dung search, có chứa hình ảnh loading ở bên phải textbox */
+.faq .faqsearch .faqsearchinputbox input {
+	font-size:16px;
+	color:#6e6e6e;
+	padding:10px;
+	border:1px solid #f8d043; 
+	outline: #333;  width:100%;
+	background:url(img/loading_static.gif) no-repeat right 50%;	
+}
+.faq .faqsearch .faqsearchinputbox input.loading {
+	background:url(img/loading_animate.gif) no-repeat right 50%;
+}
+
+.faq-articles{margin:20px 0px ;
+}
+a {	color:#000;text-decoration:none;}
+p { 	color:#888;}
+p.back{	color:#0000FF;	margin-top:5px;	text-align:center;}
+p.goiy{ margin-bottom:-20px;}
+p.title{margin:10px 0px 15px;}
+h2,p.title a{ color:#DB2E66;}
+p.back a,a:hover, a:focus {	color:#00f; }
+	
+
