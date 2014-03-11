@@ -1,7 +1,7 @@
 <?php
 class muser extends CI_Model{
 
-    private $_table = "user";
+    private $_table = "users";
     
     function __contruct(){
         parent::__construct();
@@ -13,7 +13,7 @@ class muser extends CI_Model{
         $this->db->select('*');
         $this->db->from($this->_table);
         $this->db->limit($off,$limit);
-        $this->db->order_by("userid","asc");
+        $this->db->order_by("username","asc");
         $query = $this->db->get();
         $data = $query->result_array();
         return $data;
@@ -21,7 +21,7 @@ class muser extends CI_Model{
     
     //--- Lay thong tin 1 record qua id
     function getInfo($id){
-        $this->db->where("userid",$id);
+        $this->db->where("username",$id);
         $query = $this->db->get($this->_table);
         
         if($query)
@@ -52,14 +52,14 @@ class muser extends CI_Model{
     //--- Xoa user
     function deleteUser($id){
         if($id!=1){
-            $this->db->where("userid",$id);
+            $this->db->where("username",$id);
             $this->db->delete($this->_table);
         }
     }
 
     //--- Cap nhat user
     function updateUser($data,$id){
-        $this->db->where("userid",$id);
+        $this->db->where("username",$id);
         if($this->db->update($this->_table,$data))
             return TRUE;
         else
@@ -76,7 +76,7 @@ class muser extends CI_Model{
     function getUser($username,$id){
         if(isset($id)){ //use for update
            $this->db->where("username",$username);
-           $this->db->where("userid !=",$id);
+           $this->db->where("username !=",$id);
            $query = $this->db->get($this->_table);
         }
         else{ //user for add

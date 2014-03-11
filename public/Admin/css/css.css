@@ -1,0 +1,16 @@
+* {margin:0px; padding:0px;}
+body{width:1000px; margin:auto;}
+#banner{width:1000px;float:left;line-height:50px; text-align:center; background:#09F; color:white; }
+
+#top{width:1000px; float:left; background:#666; text-align:center; line-height:25px;}
+#top a{margin:20px; color:white;}
+#top a:hover{color:#F00;}
+i{color:red;}
+
+#left{width:250px; float:left; font-size:18px; background:#FFC;}
+
+#content{ width:500px; float:left; text-align:center;}
+h1{padding:50px;}
+#right{width:250px; float:left; font-size:18px; background: #CFC;}
+
+#bottom{width:1000px; float:left;line-height:25px; background:black; color:white; text-align:center;}

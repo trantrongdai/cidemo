@@ -1,4 +1,4 @@
-<div class="post">
+	<div class="post">
             <h2 class="title"><a href="#">Giới thiệu Đặc sản món Cá kho Hà Nam</a></h2>
             <div class="entry">
             <p>&nbsp &nbsp &nbsp &nbspMón cá kho cổ truyền của làng có từ rất lâu đời, ngày trước người dân trong làng nghèo khổ, làm ăn theo mô hình hợp tác xã, cứ đến tết mỗi nhà được phát mấy kg cá, nên người dân thường kho cá theo phương pháp riêng, có thể bảo quản rất lâu, trong suốt tháng giêng mà hương vị vẫn ngon như thường.</p>
