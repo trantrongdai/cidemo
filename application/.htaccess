@@ -1,1 +1,1 @@
-RewriteRule ^(.*)$ /ci_layout/index.php/$1 [L]  
+RewriteRule ^(.*)$ /cidemo/index.php/$1 [L]  

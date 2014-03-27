@@ -18,8 +18,8 @@ class User extends CI_Controller{
 	}
 	
 	public function index(){
-		$this->data['info']='hay qua';
-		$this->load->view("Admin/layout",$this->data);
+		$this->_data['info']='hay qua';
+		$this->load->view("Admin/layout",$this->_data);
 	}
 
 	public  function add()
@@ -28,8 +28,9 @@ class User extends CI_Controller{
         $this->form_validation->set_rules("username","username","required|max_length[25]|callback_checkNew");
         $this->form_validation->set_rules("password","password","required|matches[repassword]");
 		$this->form_validation->set_rules("fullname","fullname","required|min_length[5]");
-        
+      
         $data['error'] = "";
+        
         if($this->form_validation->run()==FALSE){
             
             $this->load->view("Admin/User/add",array("error"=>""));

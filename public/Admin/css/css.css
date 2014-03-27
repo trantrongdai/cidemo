@@ -9,8 +9,37 @@ i{color:red;}
 
 #left{width:250px; float:left; font-size:18px; background:#FFC;}
 
-#content{ width:500px; float:left; text-align:center;}
+#content{ width:500px; float:left;}
 h1{padding:50px;}
+*{margin:0px; padding:0px;}
+h2 { color: #aa2828;font-family: arial;}
+ 
+#frmEdit {
+    background: #e3e3e3; width: 500px;
+    margin: 2em auto 0; padding: 30px 52px 20px;
+    border: 0px solid #d5d5d5;
+}
+  
+#frmEdit p{ margin:5px 0px;}
+ 
+#frmEdit form input[type=text] { width: 100%;}
+ 
+label { display: block;}
+ 
+.error { color: #373737;font-style: italic;}
+ 
+input[type=submit] {
+    border: 0px solid #c62828;
+    margin:10px 0px -20px; padding: .5em;
+    background: #aa2828; color: #e3e3e3;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover { background: #9a2222;}
+ 
+ul{list-style-type: square; margin-top:20px;}
+ul li.error{color:#F00; font-size:13px;}
+
 #right{width:250px; float:left; font-size:18px; background: #CFC;}
 
 #bottom{width:1000px; float:left;line-height:25px; background:black; color:white; text-align:center;}

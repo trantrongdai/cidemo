@@ -1,3 +1,30 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href='<?php echo base_url()?>public/Admin/css/css.css' rel='stylesheet' type='text/css' />
+<title><?php echo $title ?></title>
+
+</head>
+
+<body>
+    <?php
+        $this->load->view("Admin/Layout/banner");//Banner
+    ?>
+    
+    <?php
+        $this->load->view("Admin/Layout/top");//Top
+    ?>
+    
+    <?php
+        $this->load->view("Admin/Layout/left");//Left
+    ?>
+    <div id='content'>
+       
+    
+
 <?php
     //--- Giu gia tri cua form
    $username = array(
@@ -87,27 +114,27 @@
         <fieldset>
         <legend>CHINH SUA THANH VIEN </legend>
         
-        <label>Username</label><?php echo form_input($username);?><br />
+        <p><label for="name">Username :</label><?php echo form_input($username);?><br /></p>
 
-        <label>Password</label><?php echo form_password($password);?><br />
+        <p><label for="name">Password</label><?php echo form_password($password);?><br /></p>
 
-        <label>Re-Password</label><?php echo form_password($repassword);?><br />
+        <p><label for="name">Re-Password</label><?php echo form_password($repassword);?><br /></p>
         
-        <label>FullName</label><?php echo form_input($fullname);?><br />
+        <p> <label for="name">FullName</label><?php echo form_input($fullname);?><br /></p>
 
-        <label>Gender</label><?php echo form_input($gender);?><br />
+        <p> <label for="name">Gender</label><?php echo form_input($gender);?><br /></p>
 
-        <label>Country</label><?php echo form_input($country);?><br />
+        <p><label for="name">Country</label><?php echo form_input($country);?><br /></p>
                 
-        <label>Email</label><?php echo form_input($email);?><br />
+        <p> <label for="name">Email</label><?php echo form_input($email);?><br /></p>
 
-        <label>Tel</label><?php echo form_input($tel);?><br />
+        <p> <label for="name">Tel</label><?php echo form_input($tel);?><br /></p>
 
-        <label>Active</label><?php echo form_input($active);?><br />
+        <p> <label for="name">Active</label><?php echo form_input($active);?><br /></p>
 
-        <label>Level</label><?php echo form_input($level);?><br />
+        <p><label for="name">Level</label><?php echo form_input($level);?><br /></p>
 
-        <label>Birthday</label><?php echo form_input($birthday);?><br />
+        <p><label for="name">Birthday</label><?php echo form_input($birthday);?><br /></p>
         
         
         <label>&nbsp;</label> <input type="submit" name="ok" value="Update" /><br />
@@ -115,3 +142,9 @@
         </fieldset>
     </form>
 </div>
+</div>
+    <?php
+        $this->load->view("Admin/Layout/bottom");//Bottom
+    ?>
+</body>
+</html>
